@@ -1,0 +1,23 @@
+.btn {
+  min-width: 155px;
+  width: fit-content;
+  text-align: center;
+  border-radius: 19px ;
+  text-align: center !important;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  transition: .2s ease-in;
+}
+.btn:hover {
+  scale: 1.05;
+}
+.btn.primary {
+  background-color: var(--first-color);
+}

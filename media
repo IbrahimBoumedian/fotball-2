@@ -1,0 +1,15 @@
+h2 {
+  font-size: 1.8rem;
+}
+/* Tablet  */
+@media (min-width: 48rem) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+/* Desktop */
+@media (min-width: 64rem) {
+  h2 {
+    font-size: 3rem;
+  }
+}

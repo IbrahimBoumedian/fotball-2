@@ -1,0 +1,65 @@
+.special-heading {
+  max-width: 600px;
+  margin-bottom: 50px;
+}
+.special-heading.centred {
+  text-align: center !important;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+.special-heading.centred > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Section Heading Style */
+.section-heading {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+/* Tablet  */
+@media (min-width: 48rem) {
+  .section-heading {
+    font-size: 2.5rem;
+  }
+}
+/* Desktop */
+@media (min-width: 64rem) {
+  .section-heading {
+    font-size: 3rem;
+  }
+}
+/* Section description Style */
+.section-description {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--gray-color);
+  font-weight: 300;
+  max-width: 400px;
+}
+
+.p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--gray-color);
+  font-weight: 300;
+}
+
+/* Section Heading Style */
+.h2 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+/* Tablet  */
+@media (min-width: 48rem) {
+  .h2 {
+    font-size: 2.7rem;
+  }
+}
+/* Desktop */
+@media (min-width: 64rem) {
+  .h2 {
+    font-size: 3.3rem;
+  }
+}

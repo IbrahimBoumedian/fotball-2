@@ -1,0 +1,235 @@
+/*==================== HOME ====================*/
+#home .home-group {
+  min-height: 600px;
+  padding-block: 70px;
+  display: grid;
+  gap: 20px;
+  row-gap: 50px;
+  align-items: center;
+  justify-content: center;
+}
+/* Header Tablet / Desktop  */
+@media (min-width: 48rem) {
+  #home .home-group {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important ;
+    gap: 35px;
+  }
+}
+#home .home-group .home-text {
+  max-width: 600px;
+}
+#home .home-group .home-text h6 {
+  font-size: 1rem;
+  margin: 0px;
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  color: #3a4442;
+}
+#home .home-group .home-text .explore-icon {
+  min-width: 50px;
+  min-height: 50px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #d7fff77f;
+}
+#home .home-group .home-text img {
+  width: 30px;
+}
+#home .home-group .home-text h1 {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  margin-block: 12px;
+}
+#home .home-group .home-text h1 span {
+  color: var(--first-color);
+}
+/* Header Tablet   */
+@media (min-width: 48rem) {
+  #home .home-group .home-text h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 48rem) {
+  #home .home-group .home-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #home .home-group .home-text .explore-icon {
+    display: none;
+  }
+  #home .home-group .home-text a {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+/* Desktop */
+@media (min-width: 64rem) {
+  #home .home-group .home-text {
+    padding-right: 2px;
+  }
+  #home .home-group .home-text h1 {
+    font-size: 4.5rem;
+  }
+}
+#home .home-group .home-text p {
+  color: var(--gray-color);
+  font-size: 17px;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+#home .home-group .home-text a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#home .home-group .home-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* WHY FOTBALL SECTION */
+#why-fot .reasons-list {
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 48rem) {
+  #why-fot .reasons-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 64rem) {
+  #why-fot .reasons-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+#why-fot .reasons-list li {
+  padding: 20px 25px;
+  border-radius: 10px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid rgb(0 0 0 /8%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  min-height: 230px;
+  z-index: -1;
+  transition: 0.2s ease-in;
+}
+
+#why-fot .reasons-list li figure {
+  min-height: 80px;
+}
+#why-fot .reasons-list li img {
+  scale: 1.5;
+  height: 100px;
+}
+#why-fot .reasons-list li p {
+  font-weight: 600;
+}
+
+/* What Is Fotball Section */
+#what-is-fot .img-group {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+@media (max-width: 48rem) {
+  #what-is-fot .img-group {
+    align-items: center;
+    justify-content: center;
+  }
+}
+#what-is-fot .img-group img {
+  width: 450px;
+  max-width: 100%;
+}
+#what-is-fot .what-is-fot-text h4 {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap-reverse;
+}
+#what-is-fot .what-is-fot-text h4 img {
+  width: 50px;
+  scale: 1.4;
+}
+#what-is-fot .what-is-fot-text .skills-box {
+  margin-top: 20px;
+  background: whitesmoke;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px); */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border: 1px solid rgb(0 0 0 /8%);
+
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-evenly;
+  row-gap: 25px;
+}
+#what-is-fot .what-is-fot-text .skills-box .skill-box {
+  padding: 10px;
+  padding-top: 30px;
+  position: relative !important;
+  width: 150px;
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border-radius: 15px;
+}
+
+#what-is-fot .what-is-fot-text .skills-box .skill-box .txt {
+  font-weight: 700;
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -10px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+
+  padding-left: 4px;
+  padding-right: 4px;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+#what-is-fot .what-is-fot-text .skills-box .skill-box .img-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Hide The Img On Responsive ( Mobile ) */
+@media (max-width: 48rem) {
+  #what-is-fot .img-group {
+    display: none !important;
+  }
+}
+#what-is-fot .what-is-fot-text .skills-box .skill-box .img-box img {
+  height: 80px;
+  scale: 2;
+}
